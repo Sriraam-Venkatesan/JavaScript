@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="bulb" src="pic_bulboff.gif">
+    <button onclick="OnOff()" >click</button>
+    <script>
+    function OnOff(){
+       const element=document.getElementById("bulb");
+       if(element.src.includes("pic_bulboff.gif")){
+        element.src="pic_bulbon.gif"
+       }
+       else if(element.src.includes("pic_bulbon.gif")){
+        element.src="pic_bulboff.gif";
+       }
+       }
+</script>
+</body>
+
+</html>
